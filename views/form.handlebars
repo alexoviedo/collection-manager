@@ -1,0 +1,22 @@
+<a class="button" href="/">Guitar Collection</a>
+<br>
+
+<form action="/save" method="post">
+  <label for="color">Color</label>
+  <input type="text" name="color" value="{{collection.color}}" />
+
+  <label for="year">Year</label>
+  <input type="number" name="year" value="{{collection.year}}" />
+
+  <form action="/save" method="post">
+    <label for="make">Make</label>
+    <input type="text" name="make" value="{{collection.make}}" />
+
+    <label for="model">Model</label>
+    <input type="text" name="model" value="{{collection.model}}" />
+
+    <label for="price">Price</label>
+    <input type="text" name="price" value="{{collection.price}}" />
+
+    <button>Submit</button>
+  </form>
